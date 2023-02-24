@@ -2,7 +2,7 @@
 local options = {
 -- vim.opt.backup = false 		-- Create backup file
 clipboard = "unnamedplus",	-- Use system clipboard
-cmdheight = 2,			-- More space in nvim commandline for better output readability
+-- cmdheight = 2,			-- More space in nvim commandline for better output readability
 conceallevel = 0,		-- Show text inside `` in markdown
 fileencoding = "utf-8",		-- Set file encoding to utf-8
 hlsearch = true,		-- Highlight text searches
@@ -26,8 +26,8 @@ tabstop= 2, 			-- insert 2 spaces with each tab
 cursorline = true,		-- highlight the current line
 number = true,			-- add numbered lines
 relativenumber = false,		-- use non-relative numbered lines
-numberwidth = 3,		-- set number line width to 3 (default = 4)
-signcolumn = "yes",		-- always show the sign column
+-- numberwidth = 3,		-- set number line width to 3 (default = 4)
+-- signcolumn = "yes",		-- always show the sign column 
 wrap = false,			-- remove text wrapping for really long lines
 }
 
