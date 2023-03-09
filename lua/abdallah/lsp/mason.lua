@@ -1,6 +1,5 @@
-
 local servers = {
-  "lua-language-server",
+	"lua-language-server",
 }
 
 local settings = {
@@ -8,8 +7,8 @@ local settings = {
 		border = "none",
 		icons = {
 			package_installed = "✓",
-      package_pending = "➜",
-      package_uninstalled = "✗"
+			package_pending = "➜",
+			package_uninstalled = "✗"
 		},
 	},
 	log_level = vim.log.levels.INFO,
@@ -18,8 +17,8 @@ local settings = {
 
 require("mason").setup(settings)
 require("mason-lspconfig").setup({
-  ensure_installed = servers,
-		automatic_installation = true,
+	ensure_installed = servers,
+	automatic_installation = true,
 })
 
 local lspconfig_status_ok, lspconfig = pcall(require, "lspconfig")
@@ -36,8 +35,9 @@ for _, server in pairs(servers) do
 	}
 
 	server = vim.split(server, "@")[1]
-
-	local require_ok, conf_opts = pcall(require, "abdallah.lsp.settings." .. server)
+	local conf_opts = {}
+	local require_ok
+	conf_opts = pcall(require, "abdallah.lsp.settings." .. server)
 	if require_ok then
 		opts = vim.tbl_deep_extend("force", conf_opts, opts)
 	end

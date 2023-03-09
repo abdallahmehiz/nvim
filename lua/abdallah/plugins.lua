@@ -52,13 +52,12 @@ return packer.startup(function(use)
   use "github/copilot.vim" -- Copilot for Neovim
   use "wakatime/vim-wakatime" -- Wakatime plugin for Neovim
   use "ggandor/lightspeed.nvim" -- Fast motions for Neovim
-
+  use "andweeb/presence.nvim" -- Discord rich presence
   -- UI
   use "kyazdani42/nvim-web-devicons" -- Icons for Neovim
   use "kyazdani42/nvim-tree.lua" -- File explorer for Neovim
   use "glepnir/galaxyline.nvim" -- Statusline for Neovim
   use "rcarriga/nvim-notify" -- Notifications for Neovim
-  -- completion
   use "folke/tokyonight.nvim" -- Theme for Neovim
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
@@ -67,7 +66,6 @@ return packer.startup(function(use)
   use "hrsh7th/cmp-cmdline" -- cmdline completions
   use "hrsh7th/cmp-nvim-lsp"
   use "hrsh7th/cmp-nvim-lua"
-  use "L3MON4D3/LuaSnip"
 
   -- LSP
   use "williamboman/mason.nvim" -- simple to use language server installer
