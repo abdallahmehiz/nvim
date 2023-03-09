@@ -1,5 +1,21 @@
 local servers = {
-	"lua-language-server",
+  -- LSPs
+	"lua_ls", -- Lua LSP
+  "jdtls", -- Java LSP
+  "html", -- Html LSP
+  "clangd", -- C LSP
+  "cssls", -- CSS LSP
+  "cssmodules_ls", -- CSS Modules LSP
+  "emmet_ls", -- Emmet LSP
+  "eslint", -- Eslint LSP
+--  "jqls", -- JQuery LSP
+  "jsonls", -- JSON LSP
+  "kotlin_language_server", -- Kotlin LSP
+  "marksman", -- Markdown LSP
+  "pylsp", -- Python LSP
+  "sqls", -- SQL LSP
+  "texlab", -- LaTeX LSP
+  "vuels", -- Vue LSP
 }
 
 local settings = {
