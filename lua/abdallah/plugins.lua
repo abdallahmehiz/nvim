@@ -58,13 +58,22 @@ return packer.startup(function(use)
   use "kyazdani42/nvim-tree.lua" -- File explorer for Neovim
   use "glepnir/galaxyline.nvim" -- Statusline for Neovim
   use "rcarriga/nvim-notify" -- Notifications for Neovim
-
+  -- completion
+  use "folke/tokyonight.nvim" -- Theme for Neovim
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
   use "hrsh7th/cmp-buffer" -- buffer completions
   use "hrsh7th/cmp-path" -- path completions
   use "hrsh7th/cmp-cmdline" -- cmdline completions
-  use "saadparwaiz1/cmp_luasnip" -- snippet completions
+  use "hrsh7th/cmp-nvim-lsp"
+  use "hrsh7th/cmp-nvim-lua"
+  use "L3MON4D3/LuaSnip"
+
+  -- LSP
+  use "williamboman/mason.nvim" -- simple to use language server installer
+  use "williamboman/mason-lspconfig.nvim" -- simple to use language server installer
+  use "neovim/nvim-lspconfig" -- enable LSP
+  use 'jose-elias-alvarez/null-ls.nvim' -- LSP diagnostics and code actions
 
   -- snippets
   use "L3MON4D3/LuaSnip" --snippet engine

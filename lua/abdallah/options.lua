@@ -34,7 +34,6 @@ local options = {
     sidescrolloff = 8,
     guifont = "monospace:h17",               -- the font used in graphical neovim applications
 }
-
 -- loop through the options and set them
 for key, value in pairs(options) do
     vim.opt[key] = value
