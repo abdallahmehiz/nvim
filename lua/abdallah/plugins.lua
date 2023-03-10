@@ -56,7 +56,8 @@ return packer.startup(function(use)
   use "nvim-telescope/telescope.nvim" -- Fuzzy Finder
   use "nvim-telescope/telescope-media-files.nvim"
   use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
-    -- Treesitter
+  use "mattn/emmet-vim" -- Emmet for Neovim
+  -- Treesitter
   use {
     "nvim-treesitter/nvim-treesitter",
     run = ":TSUpdate",
@@ -67,6 +68,7 @@ return packer.startup(function(use)
   use "glepnir/galaxyline.nvim" -- Statusline for Neovim
   use "rcarriga/nvim-notify" -- Notifications for Neovim
   use "folke/tokyonight.nvim" -- Theme for Neovim
+  use "romgrk/barbar.nvim" -- Better looking tabs
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
   use "hrsh7th/cmp-buffer" -- buffer completions

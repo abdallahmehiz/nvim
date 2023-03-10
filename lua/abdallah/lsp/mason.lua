@@ -16,6 +16,7 @@ local servers = {
   "sqls", -- SQL LSP
   "texlab", -- LaTeX LSP
   "vuels", -- Vue LSP
+  "tsserver", -- TS LSP
 }
 
 local settings = {
