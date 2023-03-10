@@ -55,6 +55,11 @@ return packer.startup(function(use)
   use "andweeb/presence.nvim" -- Discord rich presence
   use "nvim-telescope/telescope.nvim" -- Fuzzy Finder
   use "nvim-telescope/telescope-media-files.nvim"
+    -- Treesitter
+  use {
+    "nvim-treesitter/nvim-treesitter",
+    run = ":TSUpdate",
+  }
   -- UI
   use "kyazdani42/nvim-web-devicons" -- Icons for Neovim
   use "kyazdani42/nvim-tree.lua" -- File explorer for Neovim
