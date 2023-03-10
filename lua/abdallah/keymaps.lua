@@ -1,6 +1,5 @@
 map = vim.api.nvim_set_keymap
 
-
 -- i have to break this habit
 -- Disable arrow keys
 map('n', '<Up>', '<Nop>', { noremap = true })
