@@ -55,6 +55,7 @@ return packer.startup(function(use)
   use "andweeb/presence.nvim" -- Discord rich presence
   use "nvim-telescope/telescope.nvim" -- Fuzzy Finder
   use "nvim-telescope/telescope-media-files.nvim"
+  use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
     -- Treesitter
   use {
     "nvim-treesitter/nvim-treesitter",
