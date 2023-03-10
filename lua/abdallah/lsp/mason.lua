@@ -15,7 +15,7 @@ local servers = {
   "pylsp", -- Python LSP
   "sqls", -- SQL LSP
   "texlab", -- LaTeX LSP
-  "vuels", -- Vue LSP
+--  "vuels", -- Vue LSP
   "tsserver", -- TS LSP
 }
 
@@ -44,7 +44,10 @@ if not lspconfig_status_ok then
 end
 
 local opts = {}
-
+-- Vue language options (volar)
+lspconfig.volar.setup {
+  filetypes = { 'typescript', 'javascript', 'javascriptreact', 'typescriptreact', 'vue', 'json' }
+}
 for _, server in pairs(servers) do
 	opts = {
 		on_attach = require("abdallah.lsp.handlers").on_attach,

@@ -9,3 +9,9 @@ require "abdallah.telescope"
 require "abdallah.treesitter"
 require "abdallah.autopairs"
 require "abdallah.barbar"
+
+-- !TODO
+-- Add Fugitive
+-- Add some code formatting
+-- Add some code linting
+-- Airline/Galaxyline also make wakatime appear in it if possible
