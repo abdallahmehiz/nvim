@@ -57,6 +57,8 @@ return packer.startup(function(use)
   use "nvim-telescope/telescope-media-files.nvim"
   use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
   use "mattn/emmet-vim" -- Emmet for Neovim
+  use "mg979/vim-visual-multi" -- Multi Cursor for neovim
+
   -- Treesitter
   use {
     "nvim-treesitter/nvim-treesitter",
