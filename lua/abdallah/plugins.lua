@@ -67,10 +67,11 @@ return packer.startup(function(use)
   -- UI
   use "kyazdani42/nvim-web-devicons" -- Icons for Neovim
   use "kyazdani42/nvim-tree.lua" -- File explorer for Neovim
-  use "glepnir/galaxyline.nvim" -- Statusline for Neovim
   use "rcarriga/nvim-notify" -- Notifications for Neovim
   use "folke/tokyonight.nvim" -- Theme for Neovim
   use "romgrk/barbar.nvim" -- Better looking tabs
+  use "nvim-lualine/lualine.nvim" -- statusbar
+
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
   use "hrsh7th/cmp-buffer" -- buffer completions
