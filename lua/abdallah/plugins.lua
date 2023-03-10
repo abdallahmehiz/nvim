@@ -53,6 +53,8 @@ return packer.startup(function(use)
   use "wakatime/vim-wakatime" -- Wakatime plugin for Neovim
   use "ggandor/lightspeed.nvim" -- Fast motions for Neovim
   use "andweeb/presence.nvim" -- Discord rich presence
+  use "nvim-telescope/telescope.nvim" -- Fuzzy Finder
+  use "nvim-telescope/telescope-media-files.nvim"
   -- UI
   use "kyazdani42/nvim-web-devicons" -- Icons for Neovim
   use "kyazdani42/nvim-tree.lua" -- File explorer for Neovim
@@ -66,7 +68,6 @@ return packer.startup(function(use)
   use "hrsh7th/cmp-cmdline" -- cmdline completions
   use "hrsh7th/cmp-nvim-lsp"
   use "hrsh7th/cmp-nvim-lua"
-
   -- LSP
   use "williamboman/mason.nvim" -- simple to use language server installer
   use "williamboman/mason-lspconfig.nvim" -- simple to use language server installer
