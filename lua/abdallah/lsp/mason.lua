@@ -13,7 +13,7 @@ local servers = {
   "kotlin_language_server", -- Kotlin LSP
   "marksman", -- Markdown LSP
   "pylsp", -- Python LSP
-  "sqls", -- SQL LSP
+  "sqlls", -- SQL LSP
   "texlab", -- LaTeX LSP
 --  "vuels", -- Vue LSP
   "tsserver", -- TS LSP
